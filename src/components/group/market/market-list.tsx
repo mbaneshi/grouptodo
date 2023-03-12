@@ -52,11 +52,7 @@ function Marketlist() {
           <HStack key={todo.id}>
             <Text>{todo.name}</Text>
             <Spacer />
-            <IconButton
-              icon={<BsTrash />}
-              onClick={() => console.log(todo.id)}
-              aria-label="aria"
-            />
+            <IconButton icon={<BsTrash />} aria-label="aria" />
           </HStack>
         ))}
       </VStack>
