@@ -1,10 +1,13 @@
 import { Grid, GridItem } from "@chakra-ui/react";
-import { Header, Footer, Content, Sidebar } from "./layout/Index";
+import { useState } from "react";
+import { Header, Footer, Content, Sidebar } from "./Index";
 
 function Layout() {
+  const [currentGroup, setCurrentgroup] = useState("clean");
+
   return (
     <Grid
-      minH={"100vh"}
+      // minH={"80vh"}
       templateRows="repeat(12, 1fr)"
       templateColumns="repeat(12, 1fr)"
       gap={1}
